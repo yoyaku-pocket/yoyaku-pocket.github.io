@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ナガグツ（イタリアン・肉バル）｜梅田・堂山町</title>
+<meta name="description" content="梅田・堂山町のイタリアン肉バル「ナガグツ」。こだわりの肉料理とワイン、気軽に楽しめる一皿を豊富にご用意。各線梅田駅 徒歩8分／中崎町駅 徒歩5分。">
+<style>
+ :root{--shu:#7b1e2b;--kin:#e0b56e;--cream:#f3ece0;--card:rgba(255,255,255,.06);--line:rgba(243,236,224,.16)}
+ *{box-sizing:border-box;margin:0;padding:0}
+ body{font-family:"Hiragino Mincho ProN","Yu Mincho",serif;color:var(--cream);background:radial-gradient(120% 60% at 50% -10%, rgba(123,30,43,.42), transparent 60%),linear-gradient(180deg,#20140f,#160d0a 45%,#100807);min-height:100vh;-webkit-font-smoothing:antialiased}
+ .wrap{max-width:460px;margin:0 auto;padding:26px 18px 40px}
+ .head{text-align:center;padding:14px 0 6px}
+ .logo{width:150px;height:auto;margin:0 auto 10px;display:block;filter:drop-shadow(0 8px 20px rgba(0,0,0,.55))}
+ .name{margin-top:12px;font-size:15px;font-weight:800;letter-spacing:1px}
+ .sub{margin-top:5px;font-size:13px;color:#d9c9a6;letter-spacing:1px;font-family:sans-serif}
+ .handle{margin-top:9px;display:inline-block;font-family:sans-serif;font-size:12.5px;color:#f0d9ac;border:1px solid var(--line);border-radius:999px;padding:4px 12px;text-decoration:none}
+ .catch{margin:16px 2px 16px;text-align:center}
+ .catch .c1{font-size:16px;font-weight:900;color:var(--cream);letter-spacing:.02em;line-height:1.65}
+ .catch .c1 b{color:var(--kin)}
+ .catch .c2{margin-top:9px;font-family:sans-serif;font-size:11.5px;color:#cbbb95;line-height:1.9}
+ .links{margin-top:4px;display:flex;flex-direction:column;gap:11px}
+ a.btn{display:flex;align-items:center;gap:12px;text-decoration:none;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px 16px;color:var(--cream)}
+ a.btn:active{transform:scale(.98)}
+ a.btn .ic{font-size:22px;width:30px;text-align:center;flex:none}
+ a.btn .tx{flex:1}
+ a.btn .tt{font-size:16px;font-weight:800;font-family:sans-serif}
+ a.btn .ds{font-size:11.5px;color:#c9b892;font-family:sans-serif;margin-top:2px}
+ a.btn .ar{opacity:.5;font-family:sans-serif}
+ a.primary{background:linear-gradient(135deg,#8f2432,#6d1a26);border-color:rgba(224,181,110,.5)}
+ a.primary .ds{color:#f0d9c4}
+ a.btn.review{background:linear-gradient(135deg,rgba(224,181,110,.16),rgba(224,181,110,.06));border-color:rgba(224,181,110,.45)}
+ a.btn.review .tt{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+ a.btn.review .stars{color:var(--kin);font-size:13px;letter-spacing:1px}
+ a.btn.review .ds{color:#e8cf9f}
+ .seclab{margin:26px 2px 12px;font-family:sans-serif;font-weight:900;font-size:16px;letter-spacing:1px;display:flex;align-items:center;gap:8px;color:var(--kin)}
+ .seclab:before,.seclab:after{content:"";height:1px;background:var(--line);flex:1}
+ .menu{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+ .m{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+ .mi{aspect-ratio:4/5;background:#0b0705;overflow:hidden}
+ .mi img{width:100%;height:100%;object-fit:cover;display:block}
+ .mn{font-family:sans-serif;font-weight:800;font-size:12.5px;padding:8px 9px 0;line-height:1.3}
+ .md{font-family:sans-serif;font-size:10.5px;color:#c2b18d;padding:3px 9px 10px;line-height:1.35}
+ .info{margin-top:24px;border-top:1px solid var(--line);padding-top:16px;font-family:sans-serif}
+ .info .row{display:flex;gap:10px;font-size:13px;color:#dccda9;padding:5px 2px}
+ .info .row .k{width:70px;color:#b7a681;flex:none}
+ .contact{margin-top:16px;text-align:center}
+ .contact a{font-family:sans-serif;font-size:12px;color:#9a8a6a;text-decoration:none}
+ .foot{margin-top:14px;text-align:center;font-family:sans-serif;font-size:11px;color:#7c6f56}
+ .iabbar{display:none;position:sticky;top:0;z-index:60;background:#7b1e2b;color:#fff;padding:11px 14px;font-family:sans-serif;font-size:12.5px;line-height:1.5;text-align:center;box-shadow:0 3px 12px rgba(0,0,0,.45)}
+ .iabbar b{display:block;font-size:13.5px;margin-bottom:4px}
+ .iabbar .obtn{margin-top:6px;background:#fff;color:#7b1e2b;border:0;border-radius:999px;padding:7px 16px;font-weight:800;font-size:12.5px;font-family:sans-serif}
+ .iabhint{display:none;margin-top:7px;font-size:11.5px;color:#f2dcdc}
+ .course{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+ .course .cimg{width:100%;display:block;aspect-ratio:16/10;object-fit:cover}
+ .course .cbody{padding:16px 16px 18px}
+ .course .ctag{display:inline-block;font-family:sans-serif;font-size:11px;font-weight:800;color:#2a1a08;background:linear-gradient(135deg,#f0d27a,#e0b56e);border-radius:999px;padding:3px 11px;letter-spacing:.5px}
+ .course .ctt{margin-top:10px;font-size:18px;font-weight:900;line-height:1.4}
+ .course .cpr{margin-top:8px;font-family:sans-serif;display:flex;align-items:baseline;gap:4px}
+ .course .cpr b{font-size:30px;color:var(--kin);font-weight:900;letter-spacing:.5px}
+ .course .cpr span{font-size:12.5px;color:#c9b892}
+ .course .cdesc{margin-top:12px;font-family:sans-serif;font-size:12px;color:#d3c29c;line-height:1.7}
+ .course .chips{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+ .course .chip{font-family:sans-serif;font-size:11px;color:#e7d6ac;border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+ .course details{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+ .course summary{font-family:sans-serif;font-size:13px;font-weight:800;color:#f0d9ac;cursor:pointer;list-style:none;display:flex;align-items:center;gap:6px}
+ .course summary::-webkit-details-marker{display:none}
+ .course summary:after{content:"▾";margin-left:auto;opacity:.6}
+ .course details[open] summary:after{content:"▴"}
+ .course .dcat{font-family:sans-serif;font-size:12px;font-weight:800;color:var(--kin);margin-top:11px}
+ .course .ditem{font-family:sans-serif;font-size:11.5px;color:#cabb96;line-height:1.6;margin-top:2px}
+ .course .cnote{margin-top:12px;font-family:sans-serif;font-size:10.5px;color:#9a8a6a;line-height:1.7}
+ .course .cbtn{margin-top:15px}
+ .cpolicy{margin-top:14px;font-family:sans-serif;font-size:10.5px;color:#a89773;line-height:1.8;background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+ .cpolicy b{color:#cbb98f;font-size:11px}
+ /* --- 背景：店の写真を暗くぼかして全面に（文字は暗幕で常に読みやすく） --- */
+ /* 背景スライドショー：料理写真がゆっくりフェードで巡回（シーンで変わる“味”） */
+ #bg{position:fixed;inset:0;z-index:-2;overflow:hidden;background:#100807}
+ #bg i{position:absolute;inset:0;background-size:cover;background-position:center;filter:blur(4px) brightness(.62) saturate(1.12);transform:scale(1.06);opacity:0;animation:bgcycle 48s infinite;will-change:opacity}
+ /* 店内→料理→店内→料理…と交互に巡回（来店感＋料理の“味”） */
+ #bg i:nth-child(1){background-image:url(nagagutsu/scene_1.jpg);animation-delay:0s}
+ #bg i:nth-child(2){background-image:url(nagagutsu/f_1183fc667e.jpg);animation-delay:8s}
+ #bg i:nth-child(3){background-image:url(nagagutsu/scene_2.jpg);animation-delay:16s}
+ #bg i:nth-child(4){background-image:url(nagagutsu/f_90626a66d5.jpg);animation-delay:24s}
+ #bg i:nth-child(5){background-image:url(nagagutsu/scene_3.jpg);animation-delay:32s}
+ #bg i:nth-child(6){background-image:url(nagagutsu/f_38481c2daf.jpg);animation-delay:40s}
+ @keyframes bgcycle{0%{opacity:0}2%{opacity:1}14%{opacity:1}17%{opacity:0}100%{opacity:0}}
+ @media (prefers-reduced-motion: reduce){#bg i{animation:none}#bg i:nth-child(1){opacity:1}}
+ body::after{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(120% 60% at 50% -8%, rgba(123,30,43,.4), transparent 55%),linear-gradient(180deg, rgba(16,8,7,.5), rgba(16,8,7,.66) 50%, rgba(16,8,7,.86))}
+ body{background:#100807}
+ /* --- イタリア国旗アクセント（緑白赤）さりげなく --- */
+ .seclab:before,.seclab:after{background:linear-gradient(90deg,#1a8f4a 0 33%,#f3ece0 33% 66%,#c8102e 66% 100%)!important;height:2px!important;opacity:.85;border-radius:2px}
+ .course .ctag{position:relative;padding-left:15px}
+ .course .ctag:before{content:"";position:absolute;left:5px;top:50%;transform:translateY(-50%);width:4px;height:72%;border-radius:2px;background:linear-gradient(180deg,#1a8f4a 0 33%,#fff 33% 66%,#c8102e 66% 100%)}
+ /* --- 予約ボタン（トップの席予約）をもう一段目立たせる --- */
+ .links a.primary{position:relative;overflow:hidden;padding:19px 16px;background:linear-gradient(135deg,#a12a38,#7a1c28);border-color:rgba(224,181,110,.75);box-shadow:0 10px 30px rgba(161,42,56,.45),inset 0 0 0 1px rgba(224,181,110,.35)}
+ .links a.primary .tt{font-size:18px}
+ .links a.primary .ic{font-size:24px}
+ .links a.primary:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(180deg,#1a8f4a 0 33%,#fff 33% 66%,#c8102e 66% 100%);z-index:1}
+</style></head><body>
+<div id="bg"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="iabbar" id="iabbar"><b>アプリ内ブラウザで開いています</b>ご予約・口コミは外部ブラウザ（Safari / Chrome）だとスムーズです。<div><button class="obtn" onclick="openExternal()">ブラウザで開く</button></div><div class="iabhint" id="iabhint">iPhoneは右上の「•••」→「外部ブラウザで開く」でSafariが開きます（ログイン済みのGoogleがそのまま使えます）。</div></div>
+<div class="wrap">
+ <div class="head">
+  <img class="logo" src="nagagutsu/lp_logo.png" alt="ナガグツ">
+  <div class="name">ナガグツ</div>
+  <div class="sub">イタリアン肉バル ｜ 梅田・堂山町</div>
+  <a class="handle" href="https://www.instagram.com/nagagutsu0427/" target="_blank" rel="noopener">@nagagutsu0427</a>
+ </div>
+ <div class="links">
+  <div class="catch">
+   <div class="c1">こだわりの肉料理 × <b>ワイン</b></div>
+   <div class="c2">気軽に楽しめる一皿を、豊富にご用意。<br>梅田・堂山町のイタリアン肉バル。<br>今宵は、ナガグツで乾杯を🍷</div>
+  </div>
+  <a class="btn primary" href="https://www.google.com/maps/reserve/v/dine/c/u7WNJPCVKLs?source=pa&hl=ja-JP" target="_blank" rel="noopener"><span class="ic">📅</span><span class="tx"><div class="tt">席を予約する（Google）</div><div class="ds">人数と日時だけ・約30秒で完了</div></span><span class="ar">›</span></a>
+  <a class="btn" href="https://www.instagram.com/nagagutsu0427/" target="_blank" rel="noopener"><span class="ic">📷</span><span class="tx"><div class="tt">Instagram</div><div class="ds">最新の一皿・お店の雰囲気 @nagagutsu0427</div></span><span class="ar">›</span></a>
+  <a class="btn" href="https://www.google.com/maps/search/?api=1&query=%E3%83%8A%E3%82%AC%E3%82%B0%E3%83%84%20%E6%A2%85%E7%94%B0%20%E5%A0%82%E5%B1%B1%E7%94%BA" target="_blank" rel="noopener"><span class="ic">📍</span><span class="tx"><div class="tt">地図・アクセス</div><div class="ds">Googleマップで開く（梅田・堂山町）</div></span><span class="ar">›</span></a>
+  <a class="btn review" href="https://search.google.com/local/writereview?placeid=ChIJ7VBuZcrnAGARqpUM8BbxAEU" target="_blank" rel="noopener"><span class="ic">⭐️</span><span class="tx"><div class="tt">口コミで応援する（Google）<span class="stars">★★★★★</span></div><div class="ds">あなたの声がスタッフの励みになります！</div></span><span class="ar">›</span></a>
+ </div>
+
+ <div class="seclab">🍷 コース・飲み放題</div>
+ <div class="course" style="margin-top:14px"><img class="cimg" loading="lazy" src="nagagutsu/f_06f7322235.jpg" alt="飲み放題付き「王道バルコース」"><div class="cbody"><span class="ctag">👑 人気No.1・早割クーポン有</span><div class="ctt">飲み放題付き「王道バルコース」</div><div class="cpr"><b>4,000</b><span>円（税込）／お一人様</span></div><div class="chips"><span class="chip">全6品</span><span class="chip">120分飲み放題付</span><span class="chip">2〜15名様</span><span class="chip">12:00〜24:00</span><span class="chip">滞在2時間</span></div><div class="cdesc">NagaGutsuおすすめメニューが網羅できる人気No.1コース。牛ハラミの炭火焼や名物トマトのスープパスタまで、大満足の全6品。</div><details><summary>料理内容（全6品）を見る</summary><div class="dcat">■ 前菜盛り合わせ（キャロットラペ・ブロッコリーマリネ・モルタデッラハム・グリッシーニ）</div><div class="dcat">■ ごろごろローストチキンと半熟卵のシーザーサラダ</div><div class="dcat">■ イカ墨リゾットのアランチーニとフレンチフライ</div><div class="dcat">■ 牛ハラミの炭火焼 〜ハーブガーリックバターとバルサミコの2種ソース〜</div><div class="dcat">■ 丸ごとトマトのハーブトマトスープパスタ 〜もちもち生麺パスタ〜</div><div class="dcat">■ 自家製クレーマカタラーナ</div></details><details><summary>120分飲み放題の内容を見る</summary><div class="cnote">＋500円でソムリエ厳選ワインなどが楽しめる「プレミアム飲み放題」に変更可（★印がプレミアム対象）／L.O.は終了30分前／20歳未満・お車の方へのアルコール提供は固くお断りします。</div><div class="dcat">■ ビール</div><div class="ditem">生ビール／シャンディガフ／レッドアイ</div><div class="dcat">■ ブランデースプリッツァー</div><div class="ditem">オレンジ／ジンジャー／デコポン</div><div class="dcat">■ モヒート</div><div class="ditem">スタンダード／グレフル／レモネード／ジンジャー／ジャスミン</div><div class="dcat">■ ワイン</div><div class="ditem">赤ワイン／★メスタ テンプラニーリョ オーガニック／★ノー ウォーリーズ ハッピーシラーズ／★ビコーズ アイム ピノノワール／白ワイン／★バートン ヴィンヤーズ ヒドゥン パール シャルドネ／★レオパード コースト／★フェウドアランチョ インツォリア</div><div class="dcat">■ ウイスキー</div><div class="ditem">トリス／★角／★大人のイタリアンハイボール</div><div class="dcat">■ サワー</div><div class="ditem">プレーン／レモン／ライム／グレープフルーツ／柚子はちみつ／クラマト トマト</div><div class="dcat">■ 翠</div><div class="ditem">翠ジンソーダ</div><div class="dcat">■ カクテル</div><div class="ditem">カシスソーダ／カシスオレンジ／カシスウーロン／ピーチソーダ／ファジーネーブル／ピーチウーロン／ジントニック／ジンバック／ウォッカトニック／モスコミュール／スクリュードライバー／カンパリソーダ／カンパリオレンジ／スプモーニ</div><div class="dcat">■ ワインカクテル</div><div class="ditem">オペレーター／キティ／カリモーチョ／★キール／★カーディナル／★ミモザ／★キールロワイヤル</div><div class="dcat">■ サングリア</div><div class="ditem">赤／白／★フローズン赤／★フローズン白</div><div class="dcat">■ 焼酎・梅酒</div><div class="ditem">麦／芋／梅酒／J.J</div><div class="dcat">■ ソフトドリンク</div><div class="ditem">コーラ／ジンジャーエール／オレンジ／グレープフルーツ／トニックウォーター／★ラズベリーソーダ／★ノンアルサングリア／★ノンアルモヒート／★赤ワインジュース(コンコード種)</div></details><a class="btn primary cbtn" href="https://www.google.com/maps/reserve/v/dine/c/u7WNJPCVKLs?source=pa&hl=ja-JP" target="_blank" rel="noopener"><span class="ic">🈳</span><span class="tx"><div class="tt">このコースを予約する</div><div class="ds">空席確認・ご予約へ</div></span><span class="ar">›</span></a></div></div>
+ <div class="course" style="margin-top:14px"><img class="cimg" loading="lazy" src="nagagutsu/f_536174f1b0.jpg" alt="飲み放題付き「カジュアルコース」"><div class="cbody"><span class="ctag">クーポンで2時間→3時間(日〜木)</span><div class="ctt">飲み放題付き「カジュアルコース」</div><div class="cpr"><b>3,000</b><span>円（税込）／お一人様</span></div><div class="chips"><span class="chip">全5品</span><span class="chip">120分飲み放題付</span><span class="chip">2〜15名様</span><span class="chip">12:00〜23:00</span><span class="chip">滞在2時間</span></div><div class="cdesc">ランチにも二次会にも使えるカジュアルコース。日〜木はクーポンでゆっくり3時間利用も可能。前菜〜デザートまで全5品。</div><details><summary>料理内容（全5品）を見る</summary><div class="dcat">■ 前菜盛り合わせ（キャロットラペ・ブロッコリーマリネ・モルタデッラハム・グリッシーニ）</div><div class="dcat">■ フレンチフライ 〜チーズ＆ペッパー〜</div><div class="dcat">■ イカ墨リゾットのアランチーニ</div><div class="dcat">■ 濃厚カルボナーラペンネ</div><div class="dcat">■ 自家製ジェラート</div></details><details><summary>120分飲み放題の内容を見る</summary><div class="cnote">＋500円でソムリエ厳選ワインなどが楽しめる「プレミアム飲み放題」に変更可（★印がプレミアム対象）／L.O.は終了30分前／20歳未満・お車の方へのアルコール提供は固くお断りします。</div><div class="dcat">■ ビール</div><div class="ditem">生ビール／シャンディガフ／レッドアイ</div><div class="dcat">■ ブランデースプリッツァー</div><div class="ditem">オレンジ／ジンジャー／デコポン</div><div class="dcat">■ モヒート</div><div class="ditem">スタンダード／グレフル／レモネード／ジンジャー／ジャスミン</div><div class="dcat">■ ワイン</div><div class="ditem">赤ワイン／★メスタ テンプラニーリョ オーガニック／★ノー ウォーリーズ ハッピーシラーズ／★ビコーズ アイム ピノノワール／白ワイン／★バートン ヴィンヤーズ ヒドゥン パール シャルドネ／★レオパード コースト／★フェウドアランチョ インツォリア</div><div class="dcat">■ ウイスキー</div><div class="ditem">トリス／★角／★大人のイタリアンハイボール</div><div class="dcat">■ サワー</div><div class="ditem">プレーン／レモン／ライム／グレープフルーツ／柚子はちみつ／クラマト トマト</div><div class="dcat">■ 翠</div><div class="ditem">翠ジンソーダ</div><div class="dcat">■ カクテル</div><div class="ditem">カシスソーダ／カシスオレンジ／カシスウーロン／ピーチソーダ／ファジーネーブル／ピーチウーロン／ジントニック／ジンバック／ウォッカトニック／モスコミュール／スクリュードライバー／カンパリソーダ／カンパリオレンジ／スプモーニ</div><div class="dcat">■ ワインカクテル</div><div class="ditem">オペレーター／キティ／カリモーチョ／★キール／★カーディナル／★ミモザ／★キールロワイヤル</div><div class="dcat">■ サングリア</div><div class="ditem">赤／白／★フローズン赤／★フローズン白</div><div class="dcat">■ 焼酎・梅酒</div><div class="ditem">麦／芋／梅酒／J.J</div><div class="dcat">■ ソフトドリンク</div><div class="ditem">コーラ／ジンジャーエール／オレンジ／グレープフルーツ／トニックウォーター／★ラズベリーソーダ／★ノンアルサングリア／★ノンアルモヒート／★赤ワインジュース(コンコード種)</div></details><a class="btn primary cbtn" href="https://www.google.com/maps/reserve/v/dine/c/u7WNJPCVKLs?source=pa&hl=ja-JP" target="_blank" rel="noopener"><span class="ic">🈳</span><span class="tx"><div class="tt">このコースを予約する</div><div class="ds">空席確認・ご予約へ</div></span><span class="ar">›</span></a></div></div>
+ <div class="course" style="margin-top:14px"><img class="cimg" loading="lazy" src="nagagutsu/f_90626a66d5.jpg" alt="飲み放題付き「プレミアムナガグツコース」"><div class="cbody"><span class="ctag">早割クーポン有・接待/デートに</span><div class="ctt">飲み放題付き「プレミアムナガグツコース」</div><div class="cpr"><b>5,000</b><span>円（税込）／お一人様</span></div><div class="chips"><span class="chip">全7品</span><span class="chip">120分飲み放題付</span><span class="chip">2〜15名様</span><span class="chip">12:00〜23:00</span><span class="chip">滞在2時間</span></div><div class="cdesc">シェフこだわりの厳選食材を使った本格イタリアン。和牛すね肉の赤ワイン煮込み『ストラコット』や渡り蟹のビスクパスタなど、デートから接待まで使える全7品の大満足コース。</div><details><summary>料理内容（全7品）を見る</summary><div class="dcat">■ 前菜盛り合わせ（パテドカンパーニュ・キャロットラペ・ブロッコリーマリネ・オリーブ・グリッシーニ）</div><div class="dcat">■ ハム&amp;ミートプラッター（モルタデッラ・ローストタン・生ハム）</div><div class="dcat">■ サーモンカルパッチョ 〜サラダ仕立て〜</div><div class="dcat">■ イカ墨リゾットのアランチーニとトリュフ香るフレンチフライ</div><div class="dcat">■ ストラコット アッラ フィオレンティーナ 〜和牛すね肉の赤ワイン煮込み〜</div><div class="dcat">■ 渡り蟹のビスクソースパスタ 〜もちもち生麺パスタ〜</div><div class="dcat">■ 自家製ティラミス</div></details><details><summary>120分飲み放題の内容を見る</summary><div class="cnote">＋500円でソムリエ厳選ワインなどが楽しめる「プレミアム飲み放題」に変更可（★印がプレミアム対象）／L.O.は終了30分前／20歳未満・お車の方へのアルコール提供は固くお断りします。</div><div class="dcat">■ ビール</div><div class="ditem">生ビール／シャンディガフ／レッドアイ</div><div class="dcat">■ ブランデースプリッツァー</div><div class="ditem">オレンジ／ジンジャー／デコポン</div><div class="dcat">■ モヒート</div><div class="ditem">スタンダード／グレフル／レモネード／ジンジャー／ジャスミン</div><div class="dcat">■ ワイン</div><div class="ditem">赤ワイン／★メスタ テンプラニーリョ オーガニック／★ノー ウォーリーズ ハッピーシラーズ／★ビコーズ アイム ピノノワール／白ワイン／★バートン ヴィンヤーズ ヒドゥン パール シャルドネ／★レオパード コースト／★フェウドアランチョ インツォリア</div><div class="dcat">■ ウイスキー</div><div class="ditem">トリス／★角／★大人のイタリアンハイボール</div><div class="dcat">■ サワー</div><div class="ditem">プレーン／レモン／ライム／グレープフルーツ／柚子はちみつ／クラマト トマト</div><div class="dcat">■ 翠</div><div class="ditem">翠ジンソーダ</div><div class="dcat">■ カクテル</div><div class="ditem">カシスソーダ／カシスオレンジ／カシスウーロン／ピーチソーダ／ファジーネーブル／ピーチウーロン／ジントニック／ジンバック／ウォッカトニック／モスコミュール／スクリュードライバー／カンパリソーダ／カンパリオレンジ／スプモーニ</div><div class="dcat">■ ワインカクテル</div><div class="ditem">オペレーター／キティ／カリモーチョ／★キール／★カーディナル／★ミモザ／★キールロワイヤル</div><div class="dcat">■ サングリア</div><div class="ditem">赤／白／★フローズン赤／★フローズン白</div><div class="dcat">■ 焼酎・梅酒</div><div class="ditem">麦／芋／梅酒／J.J</div><div class="dcat">■ ソフトドリンク</div><div class="ditem">コーラ／ジンジャーエール／オレンジ／グレープフルーツ／トニックウォーター／★ラズベリーソーダ／★ノンアルサングリア／★ノンアルモヒート／★赤ワインジュース(コンコード種)</div></details><a class="btn primary cbtn" href="https://www.google.com/maps/reserve/v/dine/c/u7WNJPCVKLs?source=pa&hl=ja-JP" target="_blank" rel="noopener"><span class="ic">🈳</span><span class="tx"><div class="tt">このコースを予約する</div><div class="ds">空席確認・ご予約へ</div></span><span class="ar">›</span></a></div></div>
+ <div class="course" style="margin-top:14px"><img class="cimg" loading="lazy" src="nagagutsu/f_a30fcd1743.jpg" alt="単品2時間飲み放題"><div class="cbody"><span class="ctag">ご予約様限定・通常1,500円</span><div class="ctt">単品2時間飲み放題</div><div class="cpr"><b>1,000</b><span>円（税込）／お一人様</span></div><div class="chips"><span class="chip">通常1,500→1,000円</span><span class="chip">2〜10名様</span><span class="chip">11:30〜25:00</span><span class="chip">お席90分制(60分L.O.)</span><span class="chip">1人2フードオーダー</span></div><div class="cdesc">お好きな料理と一緒に楽しめる、ご予約様限定の2時間飲み放題。プレミアム飲み放題は+500円。※金・土・祝日・祝前日は使用不可。</div><details><summary>120分飲み放題の内容を見る</summary><div class="cnote">＋500円でソムリエ厳選ワインなどが楽しめる「プレミアム飲み放題」に変更可（★印がプレミアム対象）／L.O.は終了30分前／20歳未満・お車の方へのアルコール提供は固くお断りします。<br>※21時以降のご予約は800円プランをご利用ください。</div><div class="dcat">■ ビール</div><div class="ditem">生ビール／シャンディガフ／レッドアイ</div><div class="dcat">■ ブランデースプリッツァー</div><div class="ditem">オレンジ／ジンジャー／デコポン</div><div class="dcat">■ モヒート</div><div class="ditem">スタンダード／グレフル／レモネード／ジンジャー／ジャスミン</div><div class="dcat">■ ワイン</div><div class="ditem">赤ワイン／★メスタ テンプラニーリョ オーガニック／★ノー ウォーリーズ ハッピーシラーズ／★ビコーズ アイム ピノノワール／白ワイン／★バートン ヴィンヤーズ ヒドゥン パール シャルドネ／★レオパード コースト／★フェウドアランチョ インツォリア</div><div class="dcat">■ ウイスキー</div><div class="ditem">トリス／★角／★大人のイタリアンハイボール</div><div class="dcat">■ サワー</div><div class="ditem">プレーン／レモン／ライム／グレープフルーツ／柚子はちみつ／クラマト トマト</div><div class="dcat">■ 翠</div><div class="ditem">翠ジンソーダ</div><div class="dcat">■ カクテル</div><div class="ditem">カシスソーダ／カシスオレンジ／カシスウーロン／ピーチソーダ／ファジーネーブル／ピーチウーロン／ジントニック／ジンバック／ウォッカトニック／モスコミュール／スクリュードライバー／カンパリソーダ／カンパリオレンジ／スプモーニ</div><div class="dcat">■ ワインカクテル</div><div class="ditem">オペレーター／キティ／カリモーチョ／★キール／★カーディナル／★ミモザ／★キールロワイヤル</div><div class="dcat">■ サングリア</div><div class="ditem">赤／白／★フローズン赤／★フローズン白</div><div class="dcat">■ 焼酎・梅酒</div><div class="ditem">麦／芋／梅酒／J.J</div><div class="dcat">■ ソフトドリンク</div><div class="ditem">コーラ／ジンジャーエール／オレンジ／グレープフルーツ／トニックウォーター／★ラズベリーソーダ／★ノンアルサングリア／★ノンアルモヒート／★赤ワインジュース(コンコード種)</div></details><a class="btn primary cbtn" href="https://www.google.com/maps/reserve/v/dine/c/u7WNJPCVKLs?source=pa&hl=ja-JP" target="_blank" rel="noopener"><span class="ic">🈳</span><span class="tx"><div class="tt">この飲み放題を予約する</div><div class="ds">空席確認・ご予約へ</div></span><span class="ar">›</span></a></div></div>
+ <div class="course" style="margin-top:14px"><img class="cimg" loading="lazy" src="nagagutsu/f_57dffa95fd.jpg" alt="単品2時間飲み放題【21時以降】"><div class="cbody"><span class="ctag">21時以降限定</span><div class="ctt">単品2時間飲み放題【21時以降】</div><div class="cpr"><b>800</b><span>円（税込）／お一人様</span></div><div class="chips"><span class="chip">21時以降のご予約</span><span class="chip">2〜10名様</span><span class="chip">〜25:00</span><span class="chip">お席90分制(60分L.O.)</span><span class="chip">1人2フードオーダー</span></div><div class="cdesc">21時以降のご来店がお得な2時間飲み放題プラン。プレミアム飲み放題は+500円。※金・土・祝日・祝前日は使用不可。</div><details><summary>120分飲み放題の内容を見る</summary><div class="cnote">＋500円でソムリエ厳選ワインなどが楽しめる「プレミアム飲み放題」に変更可（★印がプレミアム対象）／L.O.は終了30分前／20歳未満・お車の方へのアルコール提供は固くお断りします。</div><div class="dcat">■ ビール</div><div class="ditem">生ビール／シャンディガフ／レッドアイ</div><div class="dcat">■ ブランデースプリッツァー</div><div class="ditem">オレンジ／ジンジャー／デコポン</div><div class="dcat">■ モヒート</div><div class="ditem">スタンダード／グレフル／レモネード／ジンジャー／ジャスミン</div><div class="dcat">■ ワイン</div><div class="ditem">赤ワイン／★メスタ テンプラニーリョ オーガニック／★ノー ウォーリーズ ハッピーシラーズ／★ビコーズ アイム ピノノワール／白ワイン／★バートン ヴィンヤーズ ヒドゥン パール シャルドネ／★レオパード コースト／★フェウドアランチョ インツォリア</div><div class="dcat">■ ウイスキー</div><div class="ditem">トリス／★角／★大人のイタリアンハイボール</div><div class="dcat">■ サワー</div><div class="ditem">プレーン／レモン／ライム／グレープフルーツ／柚子はちみつ／クラマト トマト</div><div class="dcat">■ 翠</div><div class="ditem">翠ジンソーダ</div><div class="dcat">■ カクテル</div><div class="ditem">カシスソーダ／カシスオレンジ／カシスウーロン／ピーチソーダ／ファジーネーブル／ピーチウーロン／ジントニック／ジンバック／ウォッカトニック／モスコミュール／スクリュードライバー／カンパリソーダ／カンパリオレンジ／スプモーニ</div><div class="dcat">■ ワインカクテル</div><div class="ditem">オペレーター／キティ／カリモーチョ／★キール／★カーディナル／★ミモザ／★キールロワイヤル</div><div class="dcat">■ サングリア</div><div class="ditem">赤／白／★フローズン赤／★フローズン白</div><div class="dcat">■ 焼酎・梅酒</div><div class="ditem">麦／芋／梅酒／J.J</div><div class="dcat">■ ソフトドリンク</div><div class="ditem">コーラ／ジンジャーエール／オレンジ／グレープフルーツ／トニックウォーター／★ラズベリーソーダ／★ノンアルサングリア／★ノンアルモヒート／★赤ワインジュース(コンコード種)</div></details><a class="btn primary cbtn" href="https://www.google.com/maps/reserve/v/dine/c/u7WNJPCVKLs?source=pa&hl=ja-JP" target="_blank" rel="noopener"><span class="ic">🈳</span><span class="tx"><div class="tt">21時以降プランを予約する</div><div class="ds">空席確認・ご予約へ</div></span><span class="ar">›</span></a></div></div>
+ <div class="course" style="margin-top:14px"><img class="cimg" loading="lazy" src="nagagutsu/f_0f3308e879.jpg" alt="メッセージ入りデザートプレート"><div class="cbody"><span class="ctag">誕生日・記念日・歓送迎に</span><div class="ctt">メッセージ入りデザートプレート</div><div class="cpr"><b>1,100</b><span>円（税込）／日〜木限定</span></div><div class="chips"><span class="chip">通常1,650→1,100円</span><span class="chip">2〜12名様</span><span class="chip">15:00〜23:00</span><span class="chip">滞在2時間</span><span class="chip">メッセージ入り</span></div><div class="cdesc">誕生日・記念日・歓送迎など様々なシーンで使えるメッセージ入りデザートプレート。ご希望のメッセージを備考欄にご記入ください（別途1ドリンクオーダー制）。</div><a class="btn primary cbtn" href="https://www.google.com/maps/reserve/v/dine/c/u7WNJPCVKLs?source=pa&hl=ja-JP" target="_blank" rel="noopener"><span class="ic">🈳</span><span class="tx"><div class="tt">デザートプレートを予約する</div><div class="ds">空席確認・ご予約へ</div></span><span class="ar">›</span></a></div></div>
+ <div class="cpolicy"><b>ご予約について</b>　2名様〜／各コースは前日までのご予約がおすすめ ／ L.O.は終了30分前<br><b>キャンセル</b>　当日キャンセルは100%頂戴する場合があります。予約時間から15分以上ご連絡なくご来店がない場合はキャンセル扱いとなることがあります。</div>
+
+ <div class="seclab">🍽 おすすめメニュー</div>
+ <div style="font-family:sans-serif;font-size:11px;color:#b7a681;margin:-4px 2px 12px">写真の一部です。日により内容が変わります。</div>
+ <div class="menu">
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_38481c2daf.jpg?v=r3" alt="MIXアヒージョ"></div><div class="mn">MIXアヒージョ</div><div class="md">ぐつぐつ、香る一皿</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_8ada1a5a65.jpg?v=r3" alt="きゅうりピクルス"></div><div class="mn">きゅうりピクルス</div><div class="md">箸休めに、ぽりぽり</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_57dffa95fd.jpg?v=r3" alt="たっぷりガーリックのポモドーロ"></div><div class="mn">たっぷりガーリックのポモドーロ</div><div class="md">香る、王道トマト</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_cd0fe34a18.jpg?v=r3" alt="アンチョビキャベツ"></div><div class="mn">アンチョビキャベツ</div><div class="md">無限に、いける</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_0210ce7c06.jpg?v=r3" alt="アーリオ・オーリオ・エ・ペペロンチーノ"></div><div class="mn">アーリオ・オーリオ・エ・ペペロンチーノ</div><div class="md">イタリアンの、原点</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_8dcc5a5833.jpg?v=r3" alt="イカスミリゾットのアランチーニ"></div><div class="mn">イカスミリゾットのアランチーニ</div><div class="md">黒に、驚く</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_b9bc3fee2d.jpg?v=r3" alt="エビフリット"></div><div class="mn">エビフリット</div><div class="md">サクッ、ぷりっ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_8df69b7418.jpg?v=r3" alt="エリンギのソテーガーリックバターソース"></div><div class="mn">エリンギのソテーガーリックバターソース</div><div class="md">香り、じゅわり</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_d1b1f95e71.jpg?v=r3" alt="オイルサーディン"></div><div class="mn">オイルサーディン</div><div class="md">定番の、酒の肴</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_d15f6089f6.jpg?v=r3" alt="オリーブ盛り合わせ"></div><div class="mn">オリーブ盛り合わせ</div><div class="md">つまんで、乾杯</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_451c96a60a.jpg?v=r3" alt="カタラーナ"></div><div class="mn">カタラーナ</div><div class="md">香ばし、とろける</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_6c532726e6.jpg?v=r3" alt="カチョエペペ"></div><div class="mn">カチョエペペ</div><div class="md">チーズと、黒胡椒</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_542d895316.jpg?v=r3" alt="カプレーゼ"></div><div class="mn">カプレーゼ</div><div class="md">トマトと、モッツァレラ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_536174f1b0.jpg?v=r3" alt="カルボナーラ"></div><div class="mn">カルボナーラ</div><div class="md">濃厚、追い卵黄</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_62ea59a1c7.jpg?v=r3" alt="クミン香るキャロットラペ"></div><div class="mn">クミン香るキャロットラペ</div><div class="md">箸休めに、一皿</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_30db079e49.jpg?v=r3" alt="グリルケバブ"></div><div class="mn">グリルケバブ</div><div class="md">がっつり、肉。</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_6e7882caf6.jpg?v=r3" alt="グリーンサラダ"></div><div class="mn">グリーンサラダ</div><div class="md">まずは、緑から</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_ab2e35eb23.jpg?v=r3" alt="ケバブポテト"></div><div class="mn">ケバブポテト</div><div class="md">背徳の、山盛り</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_0c313daf38.jpg?v=r3" alt="サーモンカルパッチョ　サラダ仕立て"></div><div class="mn">サーモンカルパッチョ　サラダ仕立て</div><div class="md">彩り、華やか</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_b98df8ccc7.jpg?v=r3" alt="ジェラート"></div><div class="mn">ジェラート</div><div class="md">ひんやり、〆に</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_19242ccd2b.jpg?v=r3" alt="スペイン風オムレツ"></div><div class="mn">スペイン風オムレツ</div><div class="md">ふんわり、具だくさん</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_73472b14f1.jpg?v=r3" alt="タコフリット"></div><div class="mn">タコフリット</div><div class="md">やわらか、ぷりっ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_092619d0de.jpg?v=r3" alt="チーズ盛り合わせ"></div><div class="mn">チーズ盛り合わせ</div><div class="md">ワインの、相棒</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_0f3308e879.jpg?v=r3" alt="ティラミス"></div><div class="mn">ティラミス</div><div class="md">王道の、ドルチェ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_0aae837a91.jpg?v=r3" alt="ブラウニー"></div><div class="mn">ブラウニー</div><div class="md">濃厚、チョコ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_d0e7b053d8.jpg?v=r3" alt="ブロッコリーのしらすのマリナート"></div><div class="mn">ブロッコリーのしらすのマリナート</div><div class="md">さっぱり、旨み</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_48b8336de1.jpg?v=r3" alt="ペスカトーレ"></div><div class="mn">ペスカトーレ</div><div class="md">魚介、たっぷり</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_c8a3f4b897.jpg?v=r3" alt="ペンネゴルゴンゾーラ"></div><div class="mn">ペンネゴルゴンゾーラ</div><div class="md">濃厚、青カビ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_e144d587af.jpg?v=r3" alt="ポテトサラダ"></div><div class="mn">ポテトサラダ</div><div class="md">定番の、安心</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_c8879a34ef.jpg?v=r3" alt="ポテトフライ"></div><div class="mn">ポテトフライ</div><div class="md">みんな、好き</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_21d4bbb633.jpg?v=r3" alt="マッシュルーム・ドライトマトのアヒージョ"></div><div class="mn">マッシュルーム・ドライトマトのアヒージョ</div><div class="md">旨み、凝縮</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_899336c554.jpg?v=r3" alt="ミックスナッツ"></div><div class="mn">ミックスナッツ</div><div class="md">つまむ手が、止まらない</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_f2cc4f669b.jpg?v=r3" alt="ミルクレープ"></div><div class="mn">ミルクレープ</div><div class="md">重なる、しあわせ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_a30fcd1743.jpg?v=r3" alt="ムール貝白ワイン蒸し"></div><div class="mn">ムール貝白ワイン蒸し</div><div class="md">旨み、あふれる</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_ad2648b137.jpg?v=r3" alt="レーズンバター"></div><div class="mn">レーズンバター</div><div class="md">甘じょっぱ、罪。</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_612f59bfd8.jpg?v=r3" alt="ワタリガニのビスクソースパスタ"></div><div class="mn">ワタリガニのビスクソースパスタ</div><div class="md">濃厚、蟹の旨み</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_06f7322235.jpg?v=r3" alt="前菜盛り合わせ"></div><div class="mn">前菜盛り合わせ</div><div class="md">少しずつ、贅沢</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_90626a66d5.jpg?v=r3" alt="和牛すね肉の赤ワイン煮込み"></div><div class="mn">和牛すね肉の赤ワイン煮込み</div><div class="md">とろける、名物</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_cae3b35cb5.jpg?v=r3" alt="山芋チーズグラタン"></div><div class="mn">山芋チーズグラタン</div><div class="md">ふわとろ、熱々</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_39fe1f7023.jpg?v=r3" alt="山芋フリット"></div><div class="mn">山芋フリット</div><div class="md">ほくっ、さくっ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_d00246de95.jpg?v=r3" alt="揚げニョッキ　アンチョビバターソース"></div><div class="mn">揚げニョッキ　アンチョビバターソース</div><div class="md">もちっ、旨塩</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_d95e6fe33f.jpg?v=r3" alt="本日のタルト"></div><div class="mn">本日のタルト</div><div class="md">本日の、ご褒美</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_2cc30ff52f.jpg?v=r3" alt="枝豆ペペロンチーノ"></div><div class="mn">枝豆ペペロンチーノ</div><div class="md">定番を、ひとひねり</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_d74c114e96.jpg?v=r3" alt="海老とブロッコリーのアヒージョ"></div><div class="mn">海老とブロッコリーのアヒージョ</div><div class="md">ぷりぷり、ぐつぐつ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_92393e0eb6.jpg?v=r3" alt="海老ジェノベーゼニョッキ"></div><div class="mn">海老ジェノベーゼニョッキ</div><div class="md">香る、バジル</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_3eb057dd88.jpg?v=r3" alt="淡路牛のボロネーゼ"></div><div class="mn">淡路牛のボロネーゼ</div><div class="md">肉、たっぷり</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_1183fc667e.jpg?v=r3" alt="牛肩ロースのステーキ　バルサミコソース"></div><div class="mn">牛肩ロースのステーキ　バルサミコソース</div><div class="md">肉に、乾杯。</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_9174cb204f.jpg?v=r3" alt="玉ねぎ　キャラメルオニオンバター"></div><div class="mn">玉ねぎ　キャラメルオニオンバター</div><div class="md">とろり、甘い</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_349024df04.jpg?v=r3" alt="生ハム切り落とし"></div><div class="mn">生ハム切り落とし</div><div class="md">塩気が、進む</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_83736f8584.jpg?v=r3" alt="茄子のハーブトマト焼き"></div><div class="mn">茄子のハーブトマト焼き</div><div class="md">とろっと、香る</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_da49585821.jpg?v=r3" alt="蛸とセロリのマリネ　シチリア風"></div><div class="mn">蛸とセロリのマリネ　シチリア風</div><div class="md">さっぱり、シチリア</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_85160d0a6d.jpg?v=r3" alt="蛸とポテトのアヒージョ"></div><div class="mn">蛸とポテトのアヒージョ</div><div class="md">ぷりっ、ほくっ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_27d0e94069.jpg?v=r3" alt="蜜揚げさつまいも　ハニーバター"></div><div class="mn">蜜揚げさつまいも　ハニーバター</div><div class="md">甘い、しあわせ</div></div>
+<div class="m"><div class="mi"><img loading="lazy" src="nagagutsu/fd_1975bfc583.jpg?v=r3" alt="豚肩ロースのソテー　トマトソース"></div><div class="mn">豚肩ロースのソテー　トマトソース</div><div class="md">ジューシー、王道</div></div>
+ </div>
+
+ <div class="info">
+  <div class="row"><span class="k">営業時間</span><span>日〜木　11:30〜23:00<br>金・土・祝前日　11:30〜翌5:00</span></div>
+  <div class="row"><span class="k">住所</span><span>大阪府大阪市北区堂山町8-8 梅田エイトビル 1F</span></div>
+  <div class="row"><span class="k">アクセス</span><span>各線梅田駅より徒歩8分／大阪メトロ谷町線 中崎町駅 徒歩5分</span></div>
+  <div class="row"><span class="k">エリア</span><span>梅田・堂山町（東通り商店街）</span></div>
+ </div>
+ <div class="contact"><a href="tel:0661309907">お問い合わせ：06-6130-9907</a></div>
+ <div class="foot">© NagaGutsu</div>
+</div>
+<script>(function(){var ua=navigator.userAgent||"";var inApp=/Instagram|FBAN|FBAV|FB_IAB|Line\/|Twitter|; wv\)/i.test(ua);if(inApp){var b=document.getElementById("iabbar");if(b)b.style.display="block";}window.openExternal=function(){var url=location.href;var host=url.replace(/^https?:\/\//,"");if(/Android/i.test(ua)){location.href="intent://"+host+"#Intent;scheme=https;package=com.android.chrome;end";}else if(/iPhone|iPad|iPod/i.test(ua)){var hn=document.getElementById("iabhint");if(hn)hn.style.display="block";try{window.location.href="googlechromes://"+host;}catch(x){}}else{window.open(url,"_blank");}};})();</script>
+<script>/* 予約LP アクセス計測（PV・関与クリック・予約クリック=CV近似）。個人情報は保存しない＝訪問IDは端末内発行のランダム値のみ。 */
+(function(){
+  var GAS="https://script.google.com/macros/s/AKfycbxKn_MUfPgJ0nA8LJPp6YGb2Jehp9G8CpckV5bOAhe3M53eBC3Kle3O3Bf7mFzUJ2TMQw/exec";
+  var STORE="nagagutsu";
+  function vid(){ try{ var k=localStorage.getItem("lp_vid"); if(!k){ k=Date.now().toString(36)+Math.random().toString(36).slice(2,8); localStorage.setItem("lp_vid",k);} return k; }catch(e){ return ""; } }
+  function send(ev,label){
+    try{
+      var u=GAS+"?api=track&ev="+encodeURIComponent(ev)+"&label="+encodeURIComponent(label||"")+"&store="+STORE+"&vid="+encodeURIComponent(vid())+"&ref="+encodeURIComponent((document.referrer||"").slice(0,200))+"&ua="+encodeURIComponent((navigator.userAgent||"").slice(0,120))+"&t="+Date.now();
+      if(window.fetch){ fetch(u,{mode:"no-cors",keepalive:true}).catch(function(){ new Image().src=u; }); }
+      else { new Image().src=u; }
+    }catch(e){}
+  }
+  function labelOf(a){
+    var h=(a.getAttribute("href")||"").toLowerCase();
+    if(h.indexOf("google.com/maps/reserve")>=0) return "席予約(Google)";
+    if(h.indexOf("tabelog.com")>=0) return "コース・メニュー(食べログ)";
+    if(h.indexOf("writereview")>=0 || h.indexOf("cid=")>=0) return "口コミ";
+    if(h.indexOf("instagram.com")>=0) return "Instagram";
+    if(h.indexOf("google.com/maps")>=0 || h.indexOf("maps.app.goo.gl")>=0) return "地図";
+    if(h.indexOf("tel:")===0) return "電話";
+    return "";
+  }
+  send("view","");
+  document.addEventListener("click",function(e){
+    var a=e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if(!a) return;
+    var lb=labelOf(a);
+    if(lb) send("click",lb);
+  }, true);
+})();</script>
+</body></html>
